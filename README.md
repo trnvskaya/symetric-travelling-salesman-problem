@@ -1,10 +1,10 @@
 # Symetric Travelling Salesman Problem
 
-### Overview
+## Overview
 
 This project implements a solution to the Traveling Salesman Problem (TSP) using the Hill-Climbing algorithm. The goal is to find a near-optimal route that minimizes the total travel distance between cities.
 
-### Features
+## Features
 
 - **State Encoding:** The solution represents a tour as a permutation of cities.
 
@@ -15,9 +15,6 @@ This project implements a solution to the Traveling Salesman Problem (TSP) using
 - **Local Search Strategy:** Supports both steepest ascent and first improvement hill-climbing variations.
 
 - **Escape from Local Optima:** Random restarts (represented by parameter *steepest* being set to True) help avoid getting stuck in local optima.
-
-### Usage
-Here's a properly formatted README snippet for your project:  
 
 ## Usage
 
@@ -45,13 +42,13 @@ This means:
 - Prague is **2215 km** from Madrid.
 - Ankara is **2292 km** from Prague.
 
-## Dependencies
+### Dependencies
 
 - Python 3
 - NumPy
 - tqdm
 
-## Running the Program
+### Running the Program
 
 ```sh
 python3 main.py distances.csv hill-climbing
@@ -65,7 +62,7 @@ python3 main.py distances.csv bruteforce
 
 This will attempt to solve TSP using **Brute Force** (not recommended for large inputs).
 
-The project contains 2 input files: in10.csv and in18.csv.
+The project contains 2 input files: `in10.csv` and `in18.csv`.
 
 Brute Force is **NOT** recommended to use on the second input file.
 
