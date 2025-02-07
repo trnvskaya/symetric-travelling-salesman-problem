@@ -65,7 +65,7 @@ def initialize_tour (paths):
     return tour
 
 
-def get_neighbors (x, n = 20):
+def get_neighbors (x, n = 25):
     neighbors = []
 
     while len(neighbors) < n:
@@ -156,6 +156,7 @@ def main ():
         print("Best tour:")
         print_result(best_tour, cities, distances)
     elif algorithm == 'bruteforce':
+        print("Bruteforce:")
         best_tour = bruteforce(cities, distances)
         print_result(best_tour, cities, distances)
 
